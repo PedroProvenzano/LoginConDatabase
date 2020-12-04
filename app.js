@@ -13,6 +13,10 @@ const usersRoute = require("./routes/users");
 const connection = require("./connection");
 app.use("/users", usersRoute);
 
+app.get('/', (req, res) => {
+    res.json("Hola");
+});
+
 // Conexion con la base de datos
 connection();
 
