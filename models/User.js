@@ -10,6 +10,22 @@ const UserSchema = mongoose.Schema({
         type: String,
         required: true 
     },
+    pronoun: {
+        type: String,
+        required: false
+    },
+    profilePic: {
+        type: String,
+        required: false
+    },
+    description: {
+        type: String,
+        required: false
+    },
+    links: {
+        type: Array,
+        required: false
+    },
     date: { type: Date, default: Date.now }
 });
 
